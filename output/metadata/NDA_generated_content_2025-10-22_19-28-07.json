@@ -1,0 +1,86 @@
+{
+  "document_name": "NDA_generated_content",
+  "timestamp": "2025-10-22_19-28-07",
+  "parsed_metadata": {
+    "title": "Non-Disclosure Agreement",
+    "sections": {
+      "heading_1": {
+        "type": "Heading 1",
+        "content": "Non-Disclosure Agreement"
+      },
+      "paragraph_1": {
+        "type": "Paragraph",
+        "content": "This Non-Disclosure Agreement (\"Agreement\") is entered into on October 22, 2025 between Craig Johnson (\"Disclosing Party\") and TechNova Ltd (\"Receiving Party\")."
+      },
+      "heading_2_1": {
+        "type": "Heading 2",
+        "content": "1. Definition of Confidential Information"
+      },
+      "paragraph_2": {
+        "type": "Paragraph",
+        "content": "For purposes of this Agreement, \"Confidential Information\" shall include all non-public, proprietary, or confidential information disclosed by the Disclosing Party to the Receiving Party, whether disclosed orally or disclosed or accessed in written, electronic, or other form, including but not limited to, information relating to the Disclosing Party's technology, business plans, customer lists, and financial information. Confidential Information also includes any information derived by the Receiving Party from Confidential Information. Information shall not be considered Confidential Information to the extent that such information is (a) already known to the Receiving Party prior to its disclosure by the Disclosing Party; (b) independently developed by the Receiving Party without reference to the Confidential Information; (c) becomes publicly available through no fault of the Receiving Party; or (d) rightfully received by the Receiving Party from a third party without restriction on disclosure."
+      },
+      "heading_2_2": {
+        "type": "Heading 2",
+        "content": "2. Obligations of Receiving Party"
+      },
+      "paragraph_3": {
+        "type": "Paragraph",
+        "content": "The Receiving Party agrees to protect the Confidential Information of the Disclosing Party with the same degree of care that it uses to protect its own confidential information of like nature, but in no event less than reasonable care. The Receiving Party agrees to hold and maintain the Confidential Information in strict confidence and not to disclose it to any third parties without the prior written consent of the Disclosing Party. The Receiving Party shall limit access to the Confidential Information to its employees, agents, or consultants who have a need to know such Confidential Information for the purpose of evaluating or carrying out the contemplated business relationship and who are bound by confidentiality obligations no less restrictive than those contained herein. The Receiving Party shall promptly notify the Disclosing Party of any unauthorized use or disclosure of the Confidential Information."
+      },
+      "heading_2_3": {
+        "type": "Heading 2",
+        "content": "3. Permitted Use"
+      },
+      "paragraph_4": {
+        "type": "Paragraph",
+        "content": "The Receiving Party may use the Confidential Information solely for the purpose of evaluating and/or pursuing a potential business relationship with the Disclosing Party (the \"Permitted Purpose\"). The Receiving Party shall not use the Confidential Information for any other purpose, including but not limited to, developing, manufacturing, or marketing any products or services that compete with the Disclosing Party."
+      },
+      "heading_2_4": {
+        "type": "Heading 2",
+        "content": "4. Return of Confidential Information"
+      },
+      "paragraph_5": {
+        "type": "Paragraph",
+        "content": "Upon the Disclosing Party's written request, the Receiving Party shall promptly return or destroy all tangible embodiments of the Confidential Information, including all copies, extracts, and derivatives thereof, and shall certify in writing that it has complied with this obligation. Notwithstanding the foregoing, the Receiving Party may retain one copy of the Confidential Information solely for archival purposes and to comply with applicable laws or regulations, provided that such retained Confidential Information shall continue to be subject to the terms of this Agreement."
+      },
+      "heading_2_5": {
+        "type": "Heading 2",
+        "content": "5. Term"
+      },
+      "paragraph_6": {
+        "type": "Paragraph",
+        "content": "This Agreement shall remain in effect for a period of five (5) years from the date of execution. The obligations of confidentiality set forth in this Agreement shall survive the termination of this Agreement for any reason."
+      },
+      "heading_2_6": {
+        "type": "Heading 2",
+        "content": "6. Governing Law"
+      },
+      "paragraph_7": {
+        "type": "Paragraph",
+        "content": "This Agreement shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of laws principles."
+      },
+      "heading_2_7": {
+        "type": "Heading 2",
+        "content": "7. Entire Agreement"
+      },
+      "paragraph_8": {
+        "type": "Paragraph",
+        "content": "This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between the parties with respect to such subject matter."
+      },
+      "heading_2_8": {
+        "type": "Heading 2",
+        "content": "8. Severability"
+      },
+      "paragraph_9": {
+        "type": "Paragraph",
+        "content": "If any provision of this Agreement is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced."
+      },
+      "signatures": {
+        "type": "Signature",
+        "content": "Disclosing Party: Craig Johnson\n\n_____________________________\n\n\nReceiving Party: TechNova Ltd\n\n_____________________________"
+      }
+    }
+  },
+  "raw_output": "```json\n{\n  \"title\": \"Non-Disclosure Agreement\",\n  \"sections\": {\n    \"heading_1\": {\n      \"type\": \"Heading 1\",\n      \"content\": \"Non-Disclosure Agreement\"\n    },\n    \"paragraph_1\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Non-Disclosure Agreement (\\\"Agreement\\\") is entered into on October 22, 2025 between Craig Johnson (\\\"Disclosing Party\\\") and TechNova Ltd (\\\"Receiving Party\\\").\"\n    },\n    \"heading_2_1\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"1. Definition of Confidential Information\"\n    },\n    \"paragraph_2\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"For purposes of this Agreement, \\\"Confidential Information\\\" shall include all non-public, proprietary, or confidential information disclosed by the Disclosing Party to the Receiving Party, whether disclosed orally or disclosed or accessed in written, electronic, or other form, including but not limited to, information relating to the Disclosing Party's technology, business plans, customer lists, and financial information. Confidential Information also includes any information derived by the Receiving Party from Confidential Information. Information shall not be considered Confidential Information to the extent that such information is (a) already known to the Receiving Party prior to its disclosure by the Disclosing Party; (b) independently developed by the Receiving Party without reference to the Confidential Information; (c) becomes publicly available through no fault of the Receiving Party; or (d) rightfully received by the Receiving Party from a third party without restriction on disclosure.\"\n    },\n    \"heading_2_2\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"2. Obligations of Receiving Party\"\n    },\n    \"paragraph_3\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"The Receiving Party agrees to protect the Confidential Information of the Disclosing Party with the same degree of care that it uses to protect its own confidential information of like nature, but in no event less than reasonable care. The Receiving Party agrees to hold and maintain the Confidential Information in strict confidence and not to disclose it to any third parties without the prior written consent of the Disclosing Party. The Receiving Party shall limit access to the Confidential Information to its employees, agents, or consultants who have a need to know such Confidential Information for the purpose of evaluating or carrying out the contemplated business relationship and who are bound by confidentiality obligations no less restrictive than those contained herein. The Receiving Party shall promptly notify the Disclosing Party of any unauthorized use or disclosure of the Confidential Information.\"\n    },\n    \"heading_2_3\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"3. Permitted Use\"\n    },\n    \"paragraph_4\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"The Receiving Party may use the Confidential Information solely for the purpose of evaluating and/or pursuing a potential business relationship with the Disclosing Party (the \\\"Permitted Purpose\\\"). The Receiving Party shall not use the Confidential Information for any other purpose, including but not limited to, developing, manufacturing, or marketing any products or services that compete with the Disclosing Party.\"\n    },\n    \"heading_2_4\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"4. Return of Confidential Information\"\n    },\n    \"paragraph_5\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Upon the Disclosing Party's written request, the Receiving Party shall promptly return or destroy all tangible embodiments of the Confidential Information, including all copies, extracts, and derivatives thereof, and shall certify in writing that it has complied with this obligation. Notwithstanding the foregoing, the Receiving Party may retain one copy of the Confidential Information solely for archival purposes and to comply with applicable laws or regulations, provided that such retained Confidential Information shall continue to be subject to the terms of this Agreement.\"\n    },\n    \"heading_2_5\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"5. Term\"\n    },\n    \"paragraph_6\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Agreement shall remain in effect for a period of five (5) years from the date of execution. The obligations of confidentiality set forth in this Agreement shall survive the termination of this Agreement for any reason.\"\n    },\n     \"heading_2_6\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"6. Governing Law\"\n    },\n    \"paragraph_7\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Agreement shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of laws principles.\"\n    },\n    \"heading_2_7\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"7. Entire Agreement\"\n    },\n    \"paragraph_8\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between the parties with respect to such subject matter.\"\n    },\n    \"heading_2_8\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"8. Severability\"\n    },\n    \"paragraph_9\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"If any provision of this Agreement is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced.\"\n    },\n    \"signatures\": {\n      \"type\": \"Signature\",\n      \"content\": \"Disclosing Party: Craig Johnson\\n\\n_____________________________\\n\\n\\nReceiving Party: TechNova Ltd\\n\\n_____________________________\"\n    }\n  }\n}\n```"
+}

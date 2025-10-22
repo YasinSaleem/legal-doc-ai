@@ -1,0 +1,12 @@
+{
+  "document_name": "Contract_metadata",
+  "timestamp": "2025-10-22_20-26-46",
+  "parsed_metadata": {
+    "Client_Name": "Law2Turn",
+    "Company": "Turn2Law",
+    "Date": "",
+    "Service_Description": "",
+    "Payment_Amount": ""
+  },
+  "raw_output": "```json\n{\n  \"Client_Name\": \"Law2Turn\",\n  \"Company\": \"Turn2Law\",\n  \"Date\": \"\",\n  \"Service_Description\": \"\",\n  \"Payment_Amount\": \"\"\n}\n```"
+}

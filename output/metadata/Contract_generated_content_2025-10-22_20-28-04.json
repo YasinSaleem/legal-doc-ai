@@ -1,0 +1,58 @@
+{
+  "document_name": "Contract_generated_content",
+  "timestamp": "2025-10-22_20-28-04",
+  "parsed_metadata": {
+    "title": "Service Agreement",
+    "sections": {
+      "heading_1": {
+        "type": "Heading 1",
+        "content": "Service Agreement"
+      },
+      "paragraph_1": {
+        "type": "Paragraph",
+        "content": "This Service Agreement (\"Agreement\") is made on November 21, 2025 between Law2Turn (\"Client\") and Turn2Law (\"Service Provider\")."
+      },
+      "heading_2_1": {
+        "type": "Heading 2",
+        "content": "1. Scope of Services"
+      },
+      "paragraph_2": {
+        "type": "Paragraph",
+        "content": "The Service Provider agrees to provide the following services: providing legal advice."
+      },
+      "heading_2_2": {
+        "type": "Heading 2",
+        "content": "2. Payment Terms"
+      },
+      "paragraph_3": {
+        "type": "Paragraph",
+        "content": "The Client agrees to pay 10 Lakhs according to the following schedule: Payment shall be made in two installments of 5 Lakhs each. The first installment shall be paid upon commencement of the services, and the second installment shall be paid upon completion of the services."
+      },
+      "heading_2_3": {
+        "type": "Heading 2",
+        "content": "3. Term and Termination"
+      },
+      "paragraph_4": {
+        "type": "Paragraph",
+        "content": "This Agreement shall commence on November 21, 2025 and continue until December 21, 2025 unless terminated earlier in accordance with the terms herein. Either party may terminate this Agreement with 30 days written notice to the other party."
+      },
+      "heading_2_4": {
+        "type": "Heading 2",
+        "content": "4. Governing Law"
+      },
+      "paragraph_5": {
+        "type": "Paragraph",
+        "content": "This Agreement shall be governed by and construed in accordance with the laws of India, without regard to its conflict of laws principles. Any dispute arising out of or relating to this Agreement shall be subject to the exclusive jurisdiction of the courts located in Delhi."
+      },
+      "signatures": {
+        "type": "Heading 2",
+        "content": "5. Signatures"
+      },
+      "signature_block": {
+        "type": "Signature",
+        "content": "Client: Law2Turn\n\n_____________________________\n\nService Provider: Turn2Law\n\n_____________________________"
+      }
+    }
+  },
+  "raw_output": "```json\n{\n  \"title\": \"Service Agreement\",\n  \"sections\": {\n    \"heading_1\": {\n      \"type\": \"Heading 1\",\n      \"content\": \"Service Agreement\"\n    },\n    \"paragraph_1\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Service Agreement (\\\"Agreement\\\") is made on November 21, 2025 between Law2Turn (\\\"Client\\\") and Turn2Law (\\\"Service Provider\\\").\"\n    },\n    \"heading_2_1\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"1. Scope of Services\"\n    },\n    \"paragraph_2\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"The Service Provider agrees to provide the following services: providing legal advice.\"\n    },\n    \"heading_2_2\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"2. Payment Terms\"\n    },\n    \"paragraph_3\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"The Client agrees to pay 10 Lakhs according to the following schedule: Payment shall be made in two installments of 5 Lakhs each. The first installment shall be paid upon commencement of the services, and the second installment shall be paid upon completion of the services.\"\n    },\n    \"heading_2_3\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"3. Term and Termination\"\n    },\n    \"paragraph_4\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Agreement shall commence on November 21, 2025 and continue until December 21, 2025 unless terminated earlier in accordance with the terms herein. Either party may terminate this Agreement with 30 days written notice to the other party.\"\n    },\n     \"heading_2_4\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"4. Governing Law\"\n    },\n    \"paragraph_5\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Agreement shall be governed by and construed in accordance with the laws of India, without regard to its conflict of laws principles. Any dispute arising out of or relating to this Agreement shall be subject to the exclusive jurisdiction of the courts located in Delhi.\"\n    },\n    \"signatures\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"5. Signatures\"\n    },\n    \"signature_block\": {\n      \"type\": \"Signature\",\n      \"content\": \"Client: Law2Turn\\n\\n_____________________________\\n\\nService Provider: Turn2Law\\n\\n_____________________________\"\n    }\n  }\n}\n```"
+}

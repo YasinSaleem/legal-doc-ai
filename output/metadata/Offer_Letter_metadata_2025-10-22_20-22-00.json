@@ -1,0 +1,12 @@
+{
+  "document_name": "Offer_Letter_metadata",
+  "timestamp": "2025-10-22_20-22-00",
+  "parsed_metadata": {
+    "Name": "Yasin",
+    "Company": "",
+    "Position": "AIML intern",
+    "Start_Date": "October 25, 2025",
+    "Salary": ""
+  },
+  "raw_output": "```json\n{\n  \"Name\": \"Yasin\",\n  \"Company\": \"\",\n  \"Position\": \"AIML intern\",\n  \"Start_Date\": \"October 25, 2025\",\n  \"Salary\": \"\"\n}\n```"
+}

@@ -1,0 +1,46 @@
+{
+  "document_name": "Offer_Letter_validation_correction",
+  "timestamp": "2025-10-22_20-15-47",
+  "parsed_metadata": {
+    "title": "Job Offer Letter",
+    "sections": {
+      "heading_1": {
+        "type": "Heading 1",
+        "content": "Job Offer Letter"
+      },
+      "paragraph_1": {
+        "type": "Paragraph",
+        "content": "Dear Yasin Saleem,\n\nWe are pleased to offer you the position of AIML intern at Turn2Law."
+      },
+      "heading_2_position": {
+        "type": "Heading 2",
+        "content": "Position Details"
+      },
+      "paragraph_2": {
+        "type": "Paragraph",
+        "content": "Your start date will be 13 November, 2025 and you will report to the Head of the AIML Department."
+      },
+      "heading_2_compensation": {
+        "type": "Heading 2",
+        "content": "Compensation"
+      },
+      "paragraph_3": {
+        "type": "Paragraph",
+        "content": "This is an unpaid internship. You will receive practical experience and training in AIML applications within the legal field. "
+      },
+      "heading_2_acceptance": {
+        "type": "Heading 2",
+        "content": "Acceptance"
+      },
+      "paragraph_4": {
+        "type": "Paragraph",
+        "content": "Please sign and return this letter by 27 November, 2025 to indicate your acceptance of this offer."
+      },
+      "signature": {
+        "type": "Signature",
+        "content": "Sincerely,\n\nHuman Resources\nTurn2Law"
+      }
+    }
+  },
+  "raw_output": "```json\n{\n  \"title\": \"Job Offer Letter\",\n  \"sections\": {\n    \"heading_1\": {\n      \"type\": \"Heading 1\",\n      \"content\": \"Job Offer Letter\"\n    },\n    \"paragraph_1\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Dear Yasin Saleem,\\n\\nWe are pleased to offer you the position of AIML intern at Turn2Law.\"\n    },\n    \"heading_2_position\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Position Details\"\n    },\n    \"paragraph_2\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Your start date will be 13 November, 2025 and you will report to the Head of the AIML Department.\"\n    },\n    \"heading_2_compensation\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Compensation\"\n    },\n    \"paragraph_3\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This is an unpaid internship. You will receive practical experience and training in AIML applications within the legal field. \"\n    },\n    \"heading_2_acceptance\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Acceptance\"\n    },\n    \"paragraph_4\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Please sign and return this letter by 27 November, 2025 to indicate your acceptance of this offer.\"\n    },\n    \"signature\": {\n      \"type\": \"Signature\",\n      \"content\": \"Sincerely,\\n\\nHuman Resources\\nTurn2Law\"\n    }\n  }\n}\n```"
+}

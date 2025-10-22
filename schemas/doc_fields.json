@@ -1,0 +1,14 @@
+{
+  "NDA": {
+    "required_fields": ["Name", "Company", "Date", "Term", "Jurisdiction"],
+    "optional_fields": ["Confidential_Info_Description", "Governing_Law"]
+  },
+  "Offer_Letter": {
+    "required_fields": ["Name", "Company", "Position", "Start_Date", "Salary"],
+    "optional_fields": ["Manager_Name", "Response_Date", "HR_Manager", "Benefits_Description"]
+  },
+  "Contract": {
+    "required_fields": ["Client_Name", "Company", "Date", "Service_Description", "Payment_Amount"],
+    "optional_fields": ["Start_Date", "End_Date", "Payment_Schedule", "Termination_Clause"]
+  }
+}

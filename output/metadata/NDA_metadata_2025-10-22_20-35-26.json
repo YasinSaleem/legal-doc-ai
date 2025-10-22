@@ -1,0 +1,12 @@
+{
+  "document_name": "NDA_metadata",
+  "timestamp": "2025-10-22_20-35-26",
+  "parsed_metadata": {
+    "Name": "Greg Johnson",
+    "Company": "TechNova Ltd",
+    "Date": "October 22, 2025",
+    "Term": "",
+    "Jurisdiction": ""
+  },
+  "raw_output": "```json\n{\n  \"Name\": \"Greg Johnson\",\n  \"Company\": \"TechNova Ltd\",\n  \"Date\": \"October 22, 2025\",\n  \"Term\": \"\",\n  \"Jurisdiction\": \"\"\n}\n```"
+}

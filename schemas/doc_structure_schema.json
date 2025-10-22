@@ -1,0 +1,37 @@
+{
+  "NDA": [
+    {"type": "Heading 1", "text": "Non-Disclosure Agreement"},
+    {"type": "Paragraph", "text": "This Non-Disclosure Agreement (\"Agreement\") is entered into on [Date] between [Name] (\"Disclosing Party\") and [Company] (\"Receiving Party\")."},
+    {"type": "Heading 2", "text": "1. Definition of Confidential Information"},
+    {"type": "Paragraph", "text": "For purposes of this Agreement, \"Confidential Information\" shall include all non-public, proprietary or confidential information disclosed by the Disclosing Party to the Receiving Party."},
+    {"type": "Heading 2", "text": "2. Obligations of Receiving Party"},
+    {"type": "Paragraph", "text": "The Receiving Party agrees to hold and maintain the Confidential Information in strict confidence and not to disclose it to any third parties without prior written consent."},
+    {"type": "Heading 2", "text": "3. Term"},
+    {"type": "Paragraph", "text": "This Agreement shall remain in effect for a period of [Term] years from the date of execution."},
+    {"type": "Heading 2", "text": "4. Signatures"},
+    {"type": "Signature", "text": "Disclosing Party: [Name]\n\nReceiving Party: [Company]"}
+  ],
+  "Offer_Letter": [
+    {"type": "Heading 1", "text": "Job Offer Letter"},
+    {"type": "Paragraph", "text": "Dear [Name],\n\nWe are pleased to offer you the position of [Position] at [Company]."},
+    {"type": "Heading 2", "text": "Position Details"},
+    {"type": "Paragraph", "text": "Your start date will be [Start_Date] and you will report to [Manager_Name]."},
+    {"type": "Heading 2", "text": "Compensation"},
+    {"type": "Paragraph", "text": "Your annual salary will be [Salary] with benefits as outlined in our employee handbook."},
+    {"type": "Heading 2", "text": "Acceptance"},
+    {"type": "Paragraph", "text": "Please sign and return this letter by [Response_Date] to indicate your acceptance of this offer."},
+    {"type": "Signature", "text": "Sincerely,\n\n[HR_Manager]\nHuman Resources\n[Company]"}
+  ],
+  "Contract": [
+    {"type": "Heading 1", "text": "Service Agreement"},
+    {"type": "Paragraph", "text": "This Service Agreement (\"Agreement\") is made on [Date] between [Client_Name] (\"Client\") and [Company] (\"Service Provider\")."},
+    {"type": "Heading 2", "text": "1. Scope of Services"},
+    {"type": "Paragraph", "text": "The Service Provider agrees to provide the following services: [Service_Description]."},
+    {"type": "Heading 2", "text": "2. Payment Terms"},
+    {"type": "Paragraph", "text": "The Client agrees to pay [Payment_Amount] according to the following schedule: [Payment_Schedule]."},
+    {"type": "Heading 2", "text": "3. Term and Termination"},
+    {"type": "Paragraph", "text": "This Agreement shall commence on [Start_Date] and continue until [End_Date] unless terminated earlier in accordance with the terms herein."},
+    {"type": "Heading 2", "text": "4. Signatures"},
+    {"type": "Signature", "text": "Client: [Client_Name]\n\nService Provider: [Company]"}
+  ]
+}

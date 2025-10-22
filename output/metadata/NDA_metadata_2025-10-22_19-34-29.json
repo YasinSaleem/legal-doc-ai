@@ -1,0 +1,10 @@
+{
+  "document_name": "NDA_metadata",
+  "timestamp": "2025-10-22_19-34-29",
+  "parsed_metadata": {
+    "Name": "jason",
+    "Company": "",
+    "Date": ""
+  },
+  "raw_output": "```json\n{\n  \"Name\": \"jason\",\n  \"Company\": \"\",\n  \"Date\": \"\"\n}\n```"
+}

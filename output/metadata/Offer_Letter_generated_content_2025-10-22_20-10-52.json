@@ -1,0 +1,70 @@
+{
+  "document_name": "Offer_Letter_generated_content",
+  "timestamp": "2025-10-22_20-10-52",
+  "parsed_metadata": {
+    "title": "Job Offer Letter",
+    "sections": {
+      "heading_1": {
+        "type": "Heading 1",
+        "content": "Job Offer Letter"
+      },
+      "paragraph_1": {
+        "type": "Paragraph",
+        "content": "Dear Yasin,\n\nWe are pleased to offer you the position of AIML Intern at AIML."
+      },
+      "heading_2_position": {
+        "type": "Heading 2",
+        "content": "Position Details"
+      },
+      "paragraph_2": {
+        "type": "Paragraph",
+        "content": "Your start date will be October 25, 2025, and the internship will be for a term of 3 months. You will report to the AIML Internship Coordinator."
+      },
+      "heading_2_compensation": {
+        "type": "Heading 2",
+        "content": "Compensation"
+      },
+      "paragraph_3": {
+        "type": "Paragraph",
+        "content": "As an AIML Intern, you will receive a stipend of [Stipend Amount] per month. Details regarding the specific amount will be provided separately. This internship is subject to the policies and guidelines outlined in the AIML Internship Handbook."
+      },
+      "heading_2_confidentiality": {
+        "type": "Heading 2",
+        "content": "Confidentiality"
+      },
+      "paragraph_4": {
+        "type": "Paragraph",
+        "content": "During your internship, you will have access to confidential information belonging to AIML. You are required to maintain the confidentiality of this information, both during and after your internship. A separate Non-Disclosure Agreement (NDA) will be provided to you for review and signature prior to your start date."
+      },
+      "heading_2_termination": {
+        "type": "Heading 2",
+        "content": "Termination"
+      },
+      "paragraph_5": {
+        "type": "Paragraph",
+        "content": "AIML reserves the right to terminate the internship at any time, with or without cause. Similarly, you may terminate the internship by providing [Number] days' written notice to AIML."
+      },
+      "heading_2_governing_law": {
+        "type": "Heading 2",
+        "content": "Governing Law"
+      },
+      "paragraph_6": {
+        "type": "Paragraph",
+        "content": "This offer letter and the internship relationship shall be governed by and construed in accordance with the laws of India."
+      },
+      "heading_2_acceptance": {
+        "type": "Heading 2",
+        "content": "Acceptance"
+      },
+      "paragraph_7": {
+        "type": "Paragraph",
+        "content": "Please sign and return this letter by [Response_Date] to indicate your acceptance of this offer. Your signature confirms that you have read, understood, and agree to the terms and conditions outlined in this letter."
+      },
+      "signatures": {
+        "type": "Signature",
+        "content": "Sincerely,\n\n[HR_Manager]\nHuman Resources\nAIML\n\n\nAcceptance:\n\nI, Yasin, accept the terms and conditions of this internship offer.\n\n_____________________________\nSignature\n\n_____________________________\nDate"
+      }
+    }
+  },
+  "raw_output": "```json\n{\n  \"title\": \"Job Offer Letter\",\n  \"sections\": {\n    \"heading_1\": {\n      \"type\": \"Heading 1\",\n      \"content\": \"Job Offer Letter\"\n    },\n    \"paragraph_1\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Dear Yasin,\\n\\nWe are pleased to offer you the position of AIML Intern at AIML.\"\n    },\n    \"heading_2_position\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Position Details\"\n    },\n    \"paragraph_2\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Your start date will be October 25, 2025, and the internship will be for a term of 3 months. You will report to the AIML Internship Coordinator.\"\n    },\n    \"heading_2_compensation\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Compensation\"\n    },\n    \"paragraph_3\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"As an AIML Intern, you will receive a stipend of [Stipend Amount] per month. Details regarding the specific amount will be provided separately. This internship is subject to the policies and guidelines outlined in the AIML Internship Handbook.\"\n    },\n    \"heading_2_confidentiality\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Confidentiality\"\n    },\n    \"paragraph_4\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"During your internship, you will have access to confidential information belonging to AIML. You are required to maintain the confidentiality of this information, both during and after your internship. A separate Non-Disclosure Agreement (NDA) will be provided to you for review and signature prior to your start date.\"\n    },\n     \"heading_2_termination\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Termination\"\n    },\n    \"paragraph_5\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"AIML reserves the right to terminate the internship at any time, with or without cause. Similarly, you may terminate the internship by providing [Number] days' written notice to AIML.\"\n    },\n    \"heading_2_governing_law\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Governing Law\"\n    },\n    \"paragraph_6\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This offer letter and the internship relationship shall be governed by and construed in accordance with the laws of India.\"\n    },\n    \"heading_2_acceptance\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"Acceptance\"\n    },\n    \"paragraph_7\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"Please sign and return this letter by [Response_Date] to indicate your acceptance of this offer. Your signature confirms that you have read, understood, and agree to the terms and conditions outlined in this letter.\"\n    },\n    \"signatures\": {\n      \"type\": \"Signature\",\n      \"content\": \"Sincerely,\\n\\n[HR_Manager]\\nHuman Resources\\nAIML\\n\\n\\nAcceptance:\\n\\nI, Yasin, accept the terms and conditions of this internship offer.\\n\\n_____________________________\\nSignature\\n\\n_____________________________\\nDate\"\n    }\n  }\n}\n```"
+}

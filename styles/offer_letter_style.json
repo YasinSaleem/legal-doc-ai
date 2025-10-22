@@ -1,0 +1,7 @@
+{
+  "Heading 1": {"font": "Calibri Light", "size": 16, "bold": true, "italic": false, "align": "center", "spacing": 1.0},
+  "Heading 2": {"font": "Calibri", "size": 14, "bold": true, "italic": false, "align": "left", "spacing": 1.0},
+  "Normal": {"font": "Times New Roman", "size": 12, "bold": false, "italic": false, "align": "justify", "spacing": 1.0},
+  "Paragraph": {"font": "Times New Roman", "size": 12, "bold": false, "italic": false, "align": "justify", "spacing": 1.0},
+  "Signature": {"font": "Times New Roman", "size": 12, "bold": false, "italic": false, "align": "left", "spacing": 1.5}
+}

@@ -1,0 +1,12 @@
+{
+  "document_name": "Offer_Letter_metadata",
+  "timestamp": "2025-10-22_20-10-24",
+  "parsed_metadata": {
+    "Name": "Yasin",
+    "Company": "AIML",
+    "Date": "October 25, 2025",
+    "Term": "",
+    "Jurisdiction": ""
+  },
+  "raw_output": "```json\n{\n  \"Name\": \"Yasin\",\n  \"Company\": \"AIML\",\n  \"Date\": \"October 25, 2025\",\n  \"Term\": \"\",\n  \"Jurisdiction\": \"\"\n}\n```"
+}

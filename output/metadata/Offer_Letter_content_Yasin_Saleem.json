@@ -1,0 +1,41 @@
+{
+  "title": "Job Offer Letter",
+  "sections": {
+    "heading_1": {
+      "type": "Heading 1",
+      "content": "Job Offer Letter"
+    },
+    "paragraph_1": {
+      "type": "Paragraph",
+      "content": "Dear Yasin Saleem,\n\nWe are pleased to offer you the position of AIML intern at Turn2Law."
+    },
+    "heading_2_position": {
+      "type": "Heading 2",
+      "content": "Position Details"
+    },
+    "paragraph_2": {
+      "type": "Paragraph",
+      "content": "Your start date will be 13 November, 2025 and you will report to the Head of the AIML Department."
+    },
+    "heading_2_compensation": {
+      "type": "Heading 2",
+      "content": "Compensation"
+    },
+    "paragraph_3": {
+      "type": "Paragraph",
+      "content": "This is an unpaid internship. You will receive practical experience and training in AIML applications within the legal field. "
+    },
+    "heading_2_acceptance": {
+      "type": "Heading 2",
+      "content": "Acceptance"
+    },
+    "paragraph_4": {
+      "type": "Paragraph",
+      "content": "Please sign and return this letter by 27 November, 2025 to indicate your acceptance of this offer."
+    },
+    "signature": {
+      "type": "Signature",
+      "content": "Sincerely,\n\n[Signature Block - To be signed by an authorized representative of Turn2Law]\nHuman Resources\nTurn2Law"
+    }
+  }
+}

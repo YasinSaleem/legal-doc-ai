@@ -1,0 +1,50 @@
+{
+  "document_name": "NDA_generated_content",
+  "timestamp": "2025-10-22_19-13-01",
+  "parsed_metadata": {
+    "title": "Non-Disclosure Agreement",
+    "sections": {
+      "heading_1": {
+        "type": "Heading 1",
+        "content": "Non-Disclosure Agreement"
+      },
+      "paragraph_1": {
+        "type": "Paragraph",
+        "content": "This Non-Disclosure Agreement (\"Agreement\") is entered into on October 22, 2025 between Alice Johnson (\"Disclosing Party\") and TechNova Ltd (\"Receiving Party\")."
+      },
+      "heading_2_1": {
+        "type": "Heading 2",
+        "content": "1. Definition of Confidential Information"
+      },
+      "paragraph_2": {
+        "type": "Paragraph",
+        "content": "For purposes of this Agreement, \"Confidential Information\" shall include all non-public, proprietary or confidential information disclosed by the Disclosing Party to the Receiving Party. This includes, but is not limited to, information relating to the Disclosing Party's technology, software, business plans, customer lists, financial information, marketing strategies, and any other information that is identified as confidential or would reasonably be understood to be confidential under the circumstances."
+      },
+      "heading_2_2": {
+        "type": "Heading 2",
+        "content": "2. Obligations of Receiving Party"
+      },
+      "paragraph_3": {
+        "type": "Paragraph",
+        "content": "The Receiving Party agrees to hold and maintain the Confidential Information in strict confidence and not to disclose it to any third parties without the prior written consent of the Disclosing Party. The Receiving Party shall protect the Confidential Information with the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care. The Receiving Party shall limit access to the Confidential Information to those employees, contractors, and agents who have a need to know such information and who are bound by confidentiality obligations at least as protective as those contained herein. The Receiving Party shall promptly notify the Disclosing Party of any unauthorized use or disclosure of Confidential Information."
+      },
+      "heading_2_3": {
+        "type": "Heading 2",
+        "content": "3. Term"
+      },
+      "paragraph_4": {
+        "type": "Paragraph",
+        "content": "This Agreement shall remain in effect for a period of five (5) years from the date of execution. The obligations of confidentiality set forth herein shall survive the termination of this Agreement for any reason."
+      },
+      "heading_2_4": {
+        "type": "Heading 2",
+        "content": "4. Signatures"
+      },
+      "signature": {
+        "type": "Signature",
+        "content": "Disclosing Party: Alice Johnson\n\nReceiving Party: TechNova Ltd"
+      }
+    }
+  },
+  "raw_output": "```json\n{\n  \"title\": \"Non-Disclosure Agreement\",\n  \"sections\": {\n    \"heading_1\": {\n      \"type\": \"Heading 1\",\n      \"content\": \"Non-Disclosure Agreement\"\n    },\n    \"paragraph_1\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Non-Disclosure Agreement (\\\"Agreement\\\") is entered into on October 22, 2025 between Alice Johnson (\\\"Disclosing Party\\\") and TechNova Ltd (\\\"Receiving Party\\\").\"\n    },\n    \"heading_2_1\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"1. Definition of Confidential Information\"\n    },\n    \"paragraph_2\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"For purposes of this Agreement, \\\"Confidential Information\\\" shall include all non-public, proprietary or confidential information disclosed by the Disclosing Party to the Receiving Party. This includes, but is not limited to, information relating to the Disclosing Party's technology, software, business plans, customer lists, financial information, marketing strategies, and any other information that is identified as confidential or would reasonably be understood to be confidential under the circumstances.\"\n    },\n    \"heading_2_2\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"2. Obligations of Receiving Party\"\n    },\n    \"paragraph_3\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"The Receiving Party agrees to hold and maintain the Confidential Information in strict confidence and not to disclose it to any third parties without the prior written consent of the Disclosing Party. The Receiving Party shall protect the Confidential Information with the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care. The Receiving Party shall limit access to the Confidential Information to those employees, contractors, and agents who have a need to know such information and who are bound by confidentiality obligations at least as protective as those contained herein. The Receiving Party shall promptly notify the Disclosing Party of any unauthorized use or disclosure of Confidential Information.\"\n    },\n    \"heading_2_3\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"3. Term\"\n    },\n    \"paragraph_4\": {\n      \"type\": \"Paragraph\",\n      \"content\": \"This Agreement shall remain in effect for a period of five (5) years from the date of execution. The obligations of confidentiality set forth herein shall survive the termination of this Agreement for any reason.\"\n    },\n    \"heading_2_4\": {\n      \"type\": \"Heading 2\",\n      \"content\": \"4. Signatures\"\n    },\n    \"signature\": {\n      \"type\": \"Signature\",\n      \"content\": \"Disclosing Party: Alice Johnson\\n\\nReceiving Party: TechNova Ltd\"\n    }\n  }\n}\n```"
+}
