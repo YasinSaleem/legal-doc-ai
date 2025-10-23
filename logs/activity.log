@@ -52,3 +52,25 @@
 [2025-10-22 20:36:09.823535] Generated full document content for NDA using Gemini.
 [2025-10-22 20:37:41.554700] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-22_20-37-41.json
 [2025-10-22 20:37:41.555134] Extracted metadata for NDA: {'Name': 'Greg Johnson', 'Company': 'TechNova Ltd', 'Date': 'October 22, 2025', 'Term': '', 'Jurisdiction': ''}
+[2025-10-22 22:37:54.031200] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-22_22-37-54.json
+[2025-10-22 22:37:54.031575] Extracted metadata for NDA: {'Name': 'Jason Bourne', 'Company': '', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-22 22:40:49.369347] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-22_22-40-49.json
+[2025-10-22 22:40:49.369732] Extracted metadata for NDA: {'Name': 'Jason Bourne', 'Company': '', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-22 22:42:38.374820] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-22_22-42-38.json
+[2025-10-22 22:42:38.375232] Extracted metadata for NDA: {'Name': 'Jason Bourne', 'Company': '', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-22 22:43:07.788804] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-22_22-43-07.json
+[2025-10-22 22:43:07.789084] Generated full document content for NDA using Gemini.
+[2025-10-22 22:47:49.069278] Metadata saved for 'Contract_metadata' → Contract_metadata_2025-10-22_22-47-49.json
+[2025-10-22 22:47:49.069589] Extracted metadata for Contract: {'Client_Name': 'Steve Jobs', 'Company': '', 'Date': '', 'Service_Description': '', 'Payment_Amount': ''}
+[2025-10-22 22:48:36.100769] Metadata saved for 'Contract_generated_content' → Contract_generated_content_2025-10-22_22-48-36.json
+[2025-10-22 22:48:36.101363] Generated full document content for Contract using Gemini.
+[2025-10-23 22:21:53.602360] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-23_22-21-53.json
+[2025-10-23 22:21:53.602723] Extracted metadata for NDA: {'Name': 'Caire Johnson', 'Company': 'Turn2Law Ltd', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-23 22:22:19.717095] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-23_22-22-19.json
+[2025-10-23 22:22:19.717844] Generated full document content for NDA using Gemini.
+[2025-10-23 22:30:00.111975] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-23_22-30-00.json
+[2025-10-23 22:30:00.112430] Extracted metadata for NDA: {'Name': 'Luis Hamilton', 'Company': 'Turn2Law Ltd', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-23 22:30:31.428211] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-23_22-30-31.json
+[2025-10-23 22:30:31.428571] Generated full document content for NDA using Gemini.
+[2025-10-23 22:30:40.152349] Metadata saved for 'NDA_validation_correction' → NDA_validation_correction_2025-10-23_22-30-40.json
+[2025-10-23 22:30:40.152541] Fixed placeholder issues in NDA document
