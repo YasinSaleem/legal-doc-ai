@@ -8,7 +8,7 @@
     "optional_fields": ["Manager_Name", "Response_Date", "HR_Manager", "Benefits_Description"]
   },
   "Contract": {
-    "required_fields": ["Client_Name", "Company", "Date", "Service_Description", "Payment_Amount"],
-    "optional_fields": ["Start_Date", "End_Date", "Payment_Schedule", "Termination_Clause"]
+    "required_fields": ["Client_Name", "Company", "Contract_Creation_Date", "Service_Description", "Payment_Amount", "Start_Date", "End_Date"],
+    "optional_fields": ["Payment_Schedule", "Termination_Clause"]
   }
 }

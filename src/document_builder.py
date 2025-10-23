@@ -85,10 +85,12 @@ def add_nda_signature(doc, disclosing_party: str, signature_style: dict):
     # Add disclosing party signature
     disclosing_para = doc.add_paragraph(f"Disclosing Party:\n{disclosing_party}\n\n_____________________________")
     apply_style_to_paragraph(disclosing_para, signature_style)
-    
+    disclosing_para.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
+
     # Add date below
     date_para = doc.add_paragraph("Date: _________________")
     apply_style_to_paragraph(date_para, signature_style)
+    date_para.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
 
 
 def add_contract_signature(doc, disclosing_party: str, receiving_party: str, signature_style: dict):
@@ -226,29 +228,34 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
     
     # Add sections
     if "sections" in json_content:
+        first_para_done = False
         for section_name, section_data in json_content["sections"].items():
             section_type = section_data.get("type", "Paragraph")
             section_content = section_data.get("content", "")
-            
+
             # Skip duplicate title sections
             if title_added and section_type == "Heading 1" and section_content == json_content.get("title", ""):
                 continue
-            
+
             # Handle signature sections with special layout based on document type
             if section_type == "Signature":
                 add_signature_section(doc, section_content, style_json, doc_type)
             else:
                 # Add the section content
                 para = doc.add_paragraph(section_content)
-                
-                # Apply appropriate styling with justified alignment for paragraphs
+
                 style_props = style_json.get(section_type, style_json.get("Normal", {}))
-                
-                # Force justified alignment for all paragraph types
-                if section_type in ["Paragraph", "Normal"]:
-                    style_props = style_props.copy()  # Don't modify original
+
+                # For Offer Letter, force first paragraph to left align
+                if doc_type == "Offer_Letter" and not first_para_done and section_type in ["Paragraph", "Normal"]:
+                    style_props = style_props.copy()
+                    style_props["align"] = "left"
+                    first_para_done = True
+                # Otherwise, force justified alignment for all paragraph types
+                elif section_type in ["Paragraph", "Normal"]:
+                    style_props = style_props.copy()
                     style_props["align"] = "justify"
-                
+
                 apply_style_to_paragraph(para, style_props)
     
     # Ensure output directory exists

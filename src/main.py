@@ -62,7 +62,11 @@ def main():
     use_reference = input(f"\nDo you have a reference document to extract styles from? (y/n): ").strip().lower()
     
     if use_reference == 'y':
-        reference_path = input("Enter path to reference document: ").strip()
+        ref_file = input("Enter template file name (without .docx): ").strip()
+        # Always resolve templates directory relative to project root
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        reference_path = os.path.join(project_root, "templates", f"{ref_file}.docx")
+        print(f"🔎 Checking for reference document at: {reference_path}")
         if os.path.exists(reference_path):
             reference_doc_path = reference_path
             print(f"✅ Reference document found: {reference_doc_path}")
@@ -89,24 +93,58 @@ def main():
     validated_content = validate_document_content(doc_type, json_content, required_fields)
     
     # Step 8: Save structured JSON output
-    json_output_path = os.path.join(OUTPUT_DIR, "metadata", f"{doc_type}_content_{extracted_data['Name'].replace(' ', '_')}.json")
+    # Determine the best key for the filename
+    doc_type_key_map = {
+        "NDA": "Name",
+        "Offer_Letter": "Name",
+        "Contract": "Contract_Creation_Date"
+    }
+    name_key = doc_type_key_map.get(doc_type, None)
+    name_val = None
+    if name_key and name_key in extracted_data:
+        name_val = extracted_data[name_key]
+    elif doc_type == "Contract":
+        # Fallback for Contract: try Start_Date, End_Date, Client_Name
+        for alt_key in ["Start_Date", "End_Date", "Client_Name"]:
+            if alt_key in extracted_data:
+                name_val = extracted_data[alt_key]
+                break
+    else:
+        # Fallback: use first required field that exists
+        for field in required_fields:
+            if field in extracted_data:
+                name_val = extracted_data[field]
+                break
+    if not name_val:
+        name_val = "Unknown"
+    safe_name_val = str(name_val).replace(' ', '_')
+    json_output_path = os.path.join(OUTPUT_DIR, "metadata", f"{doc_type}_content_{safe_name_val}.json")
     os.makedirs(os.path.dirname(json_output_path), exist_ok=True)
-    
+
     with open(json_output_path, "w", encoding="utf-8") as f:
         json.dump(validated_content, f, indent=2, ensure_ascii=False)
-    
+
     print(f"📄 Structured JSON content saved: {json_output_path}")
 
     # Step 9: Build the final Word document
     print(f"\n📝 Building final Word document...")
-    
-    # Create a simple template for base structure
-    from docx import Document
-    temp_template = os.path.join(OUTPUT_DIR, "temp_template.docx")
-    doc = Document()
-    doc.save(temp_template)
 
-    final_filename = f"{extracted_data['Name'].replace(' ', '_')}_{doc_type}_Final.docx"
+    # Create a template for base structure
+    from docx import Document
+    import shutil
+    temp_template = os.path.join(OUTPUT_DIR, "temp_template.docx")
+    if reference_doc_path:
+        # Copy reference doc and erase body content, keep header/footer
+        shutil.copy(reference_doc_path, temp_template)
+        doc = Document(temp_template)
+        # Erase all body content (keep header/footer)
+        doc._body.clear_content()
+        doc.save(temp_template)
+    else:
+        doc = Document()
+        doc.save(temp_template)
+
+    final_filename = f"{safe_name_val}_{doc_type}_Final.docx"
     final_doc_path = build_document_from_json_content(
         template_path=temp_template,
         doc_type=doc_type,

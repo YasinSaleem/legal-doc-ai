@@ -131,11 +131,15 @@ def create_fallback_content(doc_type: str, extracted_data: dict, structure: list
     for i, section in enumerate(structure):
         section_name = f"section_{i+1}"
         content = section.get("text", "")
-        
-        # Replace placeholders with actual data
+
+        # Replace placeholders with actual data, update for Contract fields
+        if doc_type == "Contract":
+            content = content.replace("[Date]", str(extracted_data.get("Contract_Creation_Date", "[Contract_Creation_Date]")))
+            content = content.replace("[Start_Date]", str(extracted_data.get("Start_Date", "[Start_Date]")))
+            content = content.replace("[End_Date]", str(extracted_data.get("End_Date", "[End_Date]")))
         for key, value in extracted_data.items():
             content = content.replace(f"[{key}]", str(value))
-        
+
         # Handle signature sections specially
         section_type = section.get("type", "Paragraph")
         if section_type == "Signature":
@@ -143,15 +147,27 @@ def create_fallback_content(doc_type: str, extracted_data: dict, structure: list
             if doc_type.upper() == "NDA":
                 # NDA: Single signature for Disclosing Party only
                 content = f"Disclosing Party: {extracted_data.get('Name', '[Name]')}\n\n_____________________________"
+            elif doc_type == "Contract":
+                # Contract: Both parties, use new fields if available
+                disclosing = extracted_data.get('Name', '[Name]')
+                receiving = extracted_data.get('Company', '[Company]')
+                contract_date = extracted_data.get('Contract_Creation_Date', '[Contract_Creation_Date]')
+                start_date = extracted_data.get('Start_Date', '[Start_Date]')
+                end_date = extracted_data.get('End_Date', '[End_Date]')
+                content = (
+                    f"Disclosing Party: {disclosing}\n\n_____________________________\n"
+                    f"Contract Creation Date: {contract_date}\nStart Date: {start_date}\nEnd Date: {end_date}\n\n"
+                    f"Receiving Party: {receiving}\n\n_____________________________"
+                )
             else:
-                # Contract and other documents: Both parties
+                # Other documents: fallback
                 content = f"Disclosing Party: {extracted_data.get('Name', '[Name]')}\n\n_____________________________\n\n\nReceiving Party: {extracted_data.get('Company', '[Company]')}\n\n_____________________________"
-        
+
         sections[section_name] = {
             "type": section_type,
             "content": content
         }
-    
+
     return {
         "title": f"{doc_type} Document",
         "sections": sections
