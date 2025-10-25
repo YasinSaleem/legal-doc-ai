@@ -33,5 +33,21 @@
     {"type": "Paragraph", "text": "This Agreement shall commence on [Start_Date] and continue until [End_Date] unless terminated earlier in accordance with the terms herein."},
     {"type": "Heading 2", "text": "4. Signatures"},
     {"type": "Signature", "text": "Client: [Client_Name]\n\nService Provider: [Company]"}
+  ],
+  "MOU": [
+    {"type": "Heading 1", "text": "Memorandum of Understanding"},
+    {"type": "Paragraph", "text": "This Memorandum of Understanding (\"MOU\") is made on [Date] between [PartyA_Name] and [PartyB_Name]."},
+    {"type": "Heading 2", "text": "1. Purpose"},
+    {"type": "Paragraph", "text": "The purpose of this MOU is to outline the intentions and understandings between the parties regarding [Purpose]."},
+    {"type": "Heading 2", "text": "2. Term"},
+    {"type": "Paragraph", "text": "This MOU shall remain in effect for [Term] years from the date of execution."},
+    {"type": "Heading 2", "text": "3. Jurisdiction"},
+    {"type": "Paragraph", "text": "This MOU shall be governed by the laws of [Jurisdiction]."},
+    {"type": "Heading 2", "text": "4. Confidentiality"},
+    {"type": "Paragraph", "text": "Both parties agree to maintain confidentiality regarding any sensitive information shared under this MOU."},
+    {"type": "Heading 2", "text": "5. Termination"},
+    {"type": "Paragraph", "text": "This MOU may be terminated by either party upon written notice to the other party."},
+    {"type": "Heading 2", "text": "6. Signatures"},
+    {"type": "Signature", "text": "Party A: [PartyA_Name]\n\nParty B: [PartyB_Name]"}
   ]
 }

@@ -11,4 +11,9 @@
     "required_fields": ["Client_Name", "Company", "Contract_Creation_Date", "Service_Description", "Payment_Amount", "Start_Date", "End_Date"],
     "optional_fields": ["Payment_Schedule", "Termination_Clause"]
   }
+  ,
+  "MOU": {
+    "required_fields": ["PartyA_Name", "PartyB_Name", "Date", "Purpose", "Term", "Jurisdiction"],
+    "optional_fields": ["Confidentiality", "Termination_Clause", "Governing_Law"]
+  }
 }
