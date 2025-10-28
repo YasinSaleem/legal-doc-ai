@@ -15,5 +15,9 @@
   "MOU": {
     "required_fields": ["PartyA_Name", "PartyB_Name", "Date", "Purpose", "Term", "Jurisdiction"],
     "optional_fields": ["Confidentiality", "Termination_Clause", "Governing_Law"]
+  },
+  "IP_Agreement": {
+    "required_fields": ["Name", "Company", "Date", "Term", "Jurisdiction"],
+    "optional_fields": ["IP_Description", "Governing_Law"]
   }
 }

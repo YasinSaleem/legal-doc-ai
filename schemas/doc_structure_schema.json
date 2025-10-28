@@ -49,5 +49,19 @@
     {"type": "Paragraph", "text": "This MOU may be terminated by either party upon written notice to the other party."},
     {"type": "Heading 2", "text": "6. Signatures"},
     {"type": "Signature", "text": "Party A: [PartyA_Name]\n\nParty B: [PartyB_Name]"}
+  ],
+  "IP_Agreement": [
+    {"type": "Heading 1", "text": "Intellectual Property Agreement"},
+    {"type": "Paragraph", "text": "This Intellectual Property Agreement (\"Agreement\") is entered into on [Date] between [Name] (\"Disclosing Party\") and [Company] (\"Receiving Party\")."},
+    {"type": "Heading 2", "text": "1. Definition of Intellectual Property"},
+    {"type": "Paragraph", "text": "For purposes of this Agreement, \"Intellectual Property\" shall include all inventions, patents, copyrights, trademarks, trade secrets, and other proprietary information described as: [IP_Description]."},
+    {"type": "Heading 2", "text": "2. Ownership and Rights"},
+    {"type": "Paragraph", "text": "The Disclosing Party retains all rights, title, and interest in the Intellectual Property. The Receiving Party agrees not to claim ownership or use the Intellectual Property except as expressly permitted herein."},
+    {"type": "Heading 2", "text": "3. Term"},
+    {"type": "Paragraph", "text": "This Agreement shall remain in effect for a period of [Term] years from the date of execution."},
+    {"type": "Heading 2", "text": "4. Jurisdiction"},
+    {"type": "Paragraph", "text": "This Agreement shall be governed by the laws of [Jurisdiction]."},
+    {"type": "Heading 2", "text": "5. Signatures"},
+  {"type": "Signature", "text": "Disclosing Party: [Name]\nDate: [Date]\n\nReceiving Party: [Company]\nDate: [Date]"}
   ]
 }

@@ -34,7 +34,7 @@ LOG_DIR = os.path.join(BASE_DIR, "logs")
 # === GLOBAL SETTINGS ===
 LOG_FILE = os.path.join(LOG_DIR, "activity.log")
 DEFAULT_MODEL = "gemini-2.0-flash"
-SUPPORTED_DOC_TYPES = ["NDA", "Offer_Letter", "Contract", "MOU"]
+SUPPORTED_DOC_TYPES = ["NDA", "Offer_Letter", "Contract", "MOU", "IP_Agreement"]
 
 def ensure_directories_exist():
     """Create required directories if they don't exist."""
