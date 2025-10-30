@@ -9,7 +9,7 @@
     {"type": "Heading 2", "text": "3. Term"},
     {"type": "Paragraph", "text": "This Agreement shall remain in effect for a period of [Term] years from the date of execution."},
     {"type": "Heading 2", "text": "4. Signatures"},
-    {"type": "Signature", "text": "Disclosing Party: [Name]\n\nReceiving Party: [Company]"}
+  {"type": "Signature", "text": "Disclosing Party: [Name]"}
   ],
   "Offer_Letter": [
     {"type": "Heading 1", "text": "Job Offer Letter"},
