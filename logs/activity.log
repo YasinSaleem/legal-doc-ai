@@ -82,3 +82,13 @@
 [2025-10-30 00:31:00.999769] Extracted metadata for NDA: {'Name': 'Akshaj', 'Company': 'SQAC', 'Date': '', 'Term': 'internship', 'Jurisdiction': ''}
 [2025-10-30 00:31:34.354399] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-30_00-31-34.json
 [2025-10-30 00:31:34.354399] Generated full document content for NDA using Gemini.
+[2025-10-31 00:22:57.323633] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-31_00-22-57.json
+[2025-10-31 00:22:57.323849] Extracted metadata for NDA: {'Name': 'Charlotte Gabby', 'Company': 'Turn2Law', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-31 00:23:30.888637] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-31_00-23-30.json
+[2025-10-31 00:23:30.888777] Generated full document content for NDA using Gemini.
+[2025-10-31 00:33:43.571580] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-31_00-33-43.json
+[2025-10-31 00:33:43.571958] Extracted metadata for NDA: {'Name': 'Adolf Jitler', 'Company': 'Turn2Law', 'Date': 'October 22, 2025', 'Term': '', 'Jurisdiction': ''}
+[2025-10-31 00:34:02.331607] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-31_00-34-02.json
+[2025-10-31 00:34:02.331909] Generated full document content for NDA using Gemini.
+[2025-10-31 00:38:10.614466] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-31_00-38-10.json
+[2025-10-31 00:38:10.614872] Generated full document content for NDA using Gemini.
