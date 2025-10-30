@@ -74,3 +74,11 @@
 [2025-10-23 22:30:31.428571] Generated full document content for NDA using Gemini.
 [2025-10-23 22:30:40.152349] Metadata saved for 'NDA_validation_correction' → NDA_validation_correction_2025-10-23_22-30-40.json
 [2025-10-23 22:30:40.152541] Fixed placeholder issues in NDA document
+[2025-10-30 00:24:01.755138] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-30_00-24-01.json
+[2025-10-30 00:24:01.757089] Extracted metadata for NDA: {'Name': 'Akshaj, Akshay', 'Company': 'SQAC', 'Date': '', 'Term': '', 'Jurisdiction': ''}
+[2025-10-30 00:24:38.306457] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-30_00-24-38.json
+[2025-10-30 00:24:38.306457] Generated full document content for NDA using Gemini.
+[2025-10-30 00:31:00.999769] Metadata saved for 'NDA_metadata' → NDA_metadata_2025-10-30_00-31-00.json
+[2025-10-30 00:31:00.999769] Extracted metadata for NDA: {'Name': 'Akshaj', 'Company': 'SQAC', 'Date': '', 'Term': 'internship', 'Jurisdiction': ''}
+[2025-10-30 00:31:34.354399] Metadata saved for 'NDA_generated_content' → NDA_generated_content_2025-10-30_00-31-34.json
+[2025-10-30 00:31:34.354399] Generated full document content for NDA using Gemini.

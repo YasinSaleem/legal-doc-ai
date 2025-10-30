@@ -8,7 +8,9 @@ Builds a Word document dynamically from:
 - Placeholder content from content_generator.py
 
 Header/footer elements are preserved.
+Now supports multilingual fonts for proper rendering of non-Latin scripts!
 """
+
 
 import os
 import json
@@ -17,6 +19,7 @@ from docx.shared import Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 from style_extractor import load_style_json
 from config import WORKING_DIR, SCHEMA_DIR
+
 
 
 # ──────────────────────────────────────────────
@@ -30,23 +33,57 @@ ALIGN_MAP = {
 }
 
 
-def apply_style_to_paragraph(paragraph, style_props: dict):
+# ──────────────────────────────────────────────
+# Helper: Get appropriate font for language
+# ──────────────────────────────────────────────
+def get_language_appropriate_font(language_code='en'):
+    """Return appropriate font for different languages to ensure proper rendering."""
+    font_mapping = {
+        'hi': 'Mangal',              # Hindi (Devanagari script)
+        'ar': 'Arial Unicode MS',    # Arabic
+        'zh': 'SimSun',              # Chinese (Simplified)
+        'ja': 'Yu Gothic',           # Japanese
+        'ko': 'Malgun Gothic',       # Korean
+        'ru': 'Times New Roman',     # Russian (Cyrillic)
+        'es': 'Times New Roman',     # Spanish
+        'fr': 'Times New Roman',     # French
+        'de': 'Times New Roman',     # German
+        'it': 'Times New Roman',     # Italian
+        'pt': 'Times New Roman',     # Portuguese
+        'default': 'Times New Roman'
+    }
+    return font_mapping.get(language_code, font_mapping['default'])
+
+
+
+def apply_style_to_paragraph(paragraph, style_props: dict, language_code='en'):
     """
     Apply style properties to a given paragraph.
+    Now supports language-specific font selection for proper character rendering.
     """
     run = paragraph.runs[0] if paragraph.runs else paragraph.add_run()
-    run.font.name = style_props.get("font", "Times New Roman")
+    
+    # Use language-appropriate font for non-Latin scripts
+    if language_code in ['hi', 'ar', 'zh', 'ja', 'ko']:
+        appropriate_font = get_language_appropriate_font(language_code)
+        run.font.name = appropriate_font
+    else:
+        run.font.name = style_props.get("font", "Times New Roman")
+    
     run.font.size = Pt(style_props.get("size", 12))
     run.font.bold = style_props.get("bold", False)
     run.font.italic = style_props.get("italic", False)
     run.font.underline = style_props.get("underline", False)
 
+
     alignment = ALIGN_MAP.get(style_props.get("align", "left"), WD_PARAGRAPH_ALIGNMENT.LEFT)
     paragraph.alignment = alignment
+
 
     # Spacing
     spacing = style_props.get("spacing", 1.0)
     paragraph.paragraph_format.line_spacing = spacing
+
 
     # Indentation
     left_indent = style_props.get("indent_left", 0)
@@ -55,7 +92,8 @@ def apply_style_to_paragraph(paragraph, style_props: dict):
     paragraph.paragraph_format.right_indent = Pt(right_indent)
 
 
-def add_signature_section(doc, signature_content: str, style_json: dict, doc_type: str = "NDA"):
+
+def add_signature_section(doc, signature_content: str, style_json: dict, doc_type: str = "NDA", language_code='en'):
     """Add a professional signature section based on document type."""
     from docx.shared import Inches
     
@@ -74,26 +112,29 @@ def add_signature_section(doc, signature_content: str, style_json: dict, doc_typ
     
     if doc_type.upper() == "NDA":
         # NDA: Single signature for Disclosing Party only
-        add_nda_signature(doc, disclosing_party, signature_style)
+        add_nda_signature(doc, disclosing_party, signature_style, language_code)
     else:
         # Contract and other documents: Side-by-side signatures for both parties
-        add_contract_signature(doc, disclosing_party, receiving_party, signature_style)
+        add_contract_signature(doc, disclosing_party, receiving_party, signature_style, language_code)
 
 
-def add_nda_signature(doc, disclosing_party: str, signature_style: dict):
+
+def add_nda_signature(doc, disclosing_party: str, signature_style: dict, language_code='en'):
     """Add NDA signature section (single party only)."""
     # Add disclosing party signature
     disclosing_para = doc.add_paragraph(f"Disclosing Party:\n{disclosing_party}\n\n_____________________________")
-    apply_style_to_paragraph(disclosing_para, signature_style)
+    apply_style_to_paragraph(disclosing_para, signature_style, language_code)
     disclosing_para.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
+
 
     # Add date below
     date_para = doc.add_paragraph("Date: _________________")
-    apply_style_to_paragraph(date_para, signature_style)
+    apply_style_to_paragraph(date_para, signature_style, language_code)
     date_para.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
 
 
-def add_contract_signature(doc, disclosing_party: str, receiving_party: str, signature_style: dict):
+
+def add_contract_signature(doc, disclosing_party: str, receiving_party: str, signature_style: dict, language_code='en'):
     """Add Contract signature section (both parties side-by-side with invisible borders)."""
     from docx.shared import Inches
     from docx.oxml import OxmlElement
@@ -120,7 +161,7 @@ def add_contract_signature(doc, disclosing_party: str, receiving_party: str, sig
             
             # Apply styling to paragraphs in cell
             for paragraph in cell.paragraphs:
-                apply_style_to_paragraph(paragraph, signature_style)
+                apply_style_to_paragraph(paragraph, signature_style, language_code)
     
     # Set column widths
     table.columns[0].width = Inches(3)
@@ -140,7 +181,8 @@ def add_contract_signature(doc, disclosing_party: str, receiving_party: str, sig
     date_cell.text = "Date: _________________"
 
 
-def build_document(template_path: str, doc_type: str, schema: list, output_filename: str) -> str:
+
+def build_document(template_path: str, doc_type: str, schema: list, output_filename: str, language_code='en') -> str:
     """
     Assemble a Word document based on schema and styles.
     Returns path to the saved draft.
@@ -148,32 +190,40 @@ def build_document(template_path: str, doc_type: str, schema: list, output_filen
     if not os.path.exists(template_path):
         raise FileNotFoundError(f"Template not found: {template_path}")
 
+
     doc = Document(template_path)
+
 
     # Remove existing body content, keep headers/footers
     doc._body.clear_content()
 
+
     # Load styles
     style_json = load_style_json(doc_type)
+
 
     # Iterate schema and add content
     for section in schema:
         sec_type = section.get("type", "Paragraph")
         sec_text = section.get("text", "")
 
+
         para = doc.add_paragraph(sec_text)
         style_props = style_json.get(sec_type, style_json.get("Paragraph", {}))
-        apply_style_to_paragraph(para, style_props)
+        apply_style_to_paragraph(para, style_props, language_code)
+
 
     # Ensure working directory exists
     os.makedirs(WORKING_DIR, exist_ok=True)
     output_path = os.path.join(WORKING_DIR, output_filename)
     doc.save(output_path)
 
+
     print(f"✅ Draft document created: {output_path}")
     return output_path
 
-def build_document_from_json_content(template_path: str, doc_type: str, json_content: dict, output_filename: str, reference_doc_path: str = None) -> str:
+
+def build_document_from_json_content(template_path: str, doc_type: str, json_content: dict, output_filename: str, reference_doc_path: str = None, language_code='en') -> str:
     """
     Build a Word document from structured JSON content with enhanced styling.
     
@@ -183,12 +233,14 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
         json_content: Structured content with title and sections
         output_filename: Name for the output file
         reference_doc_path: Optional path to reference document for style extraction
+        language_code: Language code for font selection (e.g., 'en', 'hi', 'es')
     
     Returns:
         Path to the generated document
     """
     if not os.path.exists(template_path):
         raise FileNotFoundError(f"Template not found: {template_path}")
+
 
     doc = Document(template_path)
     
@@ -223,7 +275,7 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
     if "title" in json_content:
         title_para = doc.add_paragraph(json_content["title"])
         title_style = style_json.get("Heading 1", style_json.get("Normal", {}))
-        apply_style_to_paragraph(title_para, title_style)
+        apply_style_to_paragraph(title_para, title_style, language_code)
         title_added = True
     
     # Add sections
@@ -233,18 +285,22 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
             section_type = section_data.get("type", "Paragraph")
             section_content = section_data.get("content", "")
 
+
             # Skip duplicate title sections
             if title_added and section_type == "Heading 1" and section_content == json_content.get("title", ""):
                 continue
 
+
             # Handle signature sections with special layout based on document type
             if section_type == "Signature":
-                add_signature_section(doc, section_content, style_json, doc_type)
+                add_signature_section(doc, section_content, style_json, doc_type, language_code)
             else:
                 # Add the section content
                 para = doc.add_paragraph(section_content)
 
+
                 style_props = style_json.get(section_type, style_json.get("Normal", {}))
+
 
                 # For Offer Letter, force first paragraph to left align
                 if doc_type == "Offer_Letter" and not first_para_done and section_type in ["Paragraph", "Normal"]:
@@ -256,7 +312,8 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
                     style_props = style_props.copy()
                     style_props["align"] = "justify"
 
-                apply_style_to_paragraph(para, style_props)
+
+                apply_style_to_paragraph(para, style_props, language_code)
     
     # Ensure output directory exists
     from config import DOC_OUTPUT_DIR
@@ -266,6 +323,7 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
     
     print(f"✅ Document built from JSON content: {output_path}")
     return output_path
+
 
 
 # ──────────────────────────────────────────────
@@ -282,6 +340,7 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
 #         {"type": "Paragraph", "text": "[TERM]"},
 #         {"type": "Paragraph", "text": "[SIGNATURE]"}
 #     ]
+
 
 #     draft_path = build_document(
 #         template_path="working/nda_working.docx",

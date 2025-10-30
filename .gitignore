@@ -78,3 +78,4 @@ working/
 
 # Ignore generated temp templates
 output/temp_template.docx
+.venv

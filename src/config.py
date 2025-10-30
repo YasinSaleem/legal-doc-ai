@@ -60,3 +60,26 @@ ensure_directories_exist()
 #     print(f"Base directory: {BASE_DIR}")
 #     print(f"Gemini model: {DEFAULT_MODEL}")
 #     print(f"Output directory: {OUTPUT_DIR}")
+
+
+# Add this to your config.py file
+
+SUPPORTED_LANGUAGES = {
+    'en': 'English',
+    'hi': 'Hindi', 
+    'es': 'Spanish',
+    'fr': 'French',
+    'de': 'German',
+    'it': 'Italian',
+    'pt': 'Portuguese',
+    'ru': 'Russian',
+    'ja': 'Japanese',
+    'ko': 'Korean',
+    'ar': 'Arabic',
+    'zh': 'Chinese'
+}
+
+def get_supported_languages():
+    """Return dictionary of supported languages"""
+    return SUPPORTED_LANGUAGES
+

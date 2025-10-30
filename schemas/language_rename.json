@@ -1,0 +1,21 @@
+{
+  "language_models": {
+    "hi": "Helsinki-NLP/opus-mt-en-hi",
+    "es": "Helsinki-NLP/opus-mt-en-es", 
+    "fr": "Helsinki-NLP/opus-mt-en-fr",
+    "de": "Helsinki-NLP/opus-mt-en-de",
+    "it": "Helsinki-NLP/opus-mt-en-it",
+    "pt": "Helsinki-NLP/opus-mt-en-pt",
+    "ru": "Helsinki-NLP/opus-mt-en-ru",
+    "ja": "Helsinki-NLP/opus-mt-en-ja",
+    "ko": "Helsinki-NLP/opus-mt-en-ko"
+  },
+  "fonts": {
+    "hi": "Mangal",
+    "ar": "Arial Unicode MS", 
+    "zh": "SimSun",
+    "ja": "Yu Gothic",
+    "ko": "Malgun Gothic",
+    "default": "Times New Roman"
+  }
+}
