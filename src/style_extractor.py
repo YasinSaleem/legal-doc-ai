@@ -80,6 +80,13 @@ def extract_styles_from_template(template_path: str, save_path: str) -> None:
     # Ensure directory exists
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
+    # Ensure essential style mappings exist by adding default mappings for missing essential styles
+    essential_styles = get_default_styles()
+    for essential_style_name, default_props in essential_styles.items():
+        if essential_style_name not in style_data:
+            print(f"⚠️ Essential style '{essential_style_name}' not found in template, adding default mapping")
+            style_data[essential_style_name] = default_props
+
     # Save style info
     with open(save_path, "w", encoding="utf-8") as f:
         json.dump(style_data, f, indent=2)

@@ -247,28 +247,15 @@ def build_document_from_json_content(template_path: str, doc_type: str, json_con
     # Remove existing body content, keep headers/footers
     doc._body.clear_content()
     
-    # Try to extract styles from reference document if provided
-    style_json = None
-    if reference_doc_path and os.path.exists(reference_doc_path):
-        try:
-            print(f"🎨 Attempting to extract styles from reference document: {reference_doc_path}")
-            from style_extractor import extract_styles_from_template
-            temp_style_path = os.path.join(WORKING_DIR, "temp_reference_styles.json")
-            extract_styles_from_template(reference_doc_path, temp_style_path)
-            
-            with open(temp_style_path, "r", encoding="utf-8") as f:
-                style_json = json.load(f)
-            print("✅ Successfully extracted styles from reference document")
-            
-            # Clean up temp file
-            os.remove(temp_style_path)
-        except Exception as e:
-            print(f"⚠️ Failed to extract styles from reference document: {e}")
-            print("🔄 Falling back to predefined styles")
+    # Always use predefined base styles for content formatting
+    # User templates are only used to preserve headers/footers, not for styling
+    style_json = load_style_json(doc_type)
     
-    # Fall back to predefined styles if extraction failed
-    if not style_json:
-        style_json = load_style_json(doc_type)
+    if reference_doc_path and os.path.exists(reference_doc_path):
+        print(f"📄 Using reference document for headers/footers: {reference_doc_path}")
+        print("🎨 Applying predefined base styles to content")
+    else:
+        print("🎨 Using predefined base styles for content formatting")
     
     # Add title if present (only once, not duplicated)
     title_added = False
