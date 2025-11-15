@@ -8,10 +8,10 @@ streamlit==1.51.0
 
 # Translation dependencies
 transformers==4.36.2
-torch==2.1.0
-sentencepiece==0.1.99
-tokenizers==0.14.1
 huggingface-hub==0.19.4
+tokenizers==0.14.1
+sentencepiece==0.1.99
+torch==2.1.0
 
 # API server dependencies
 fastapi==0.104.1
